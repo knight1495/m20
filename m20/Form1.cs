@@ -51,7 +51,7 @@ namespace m20
                 int valor = cola.Dequeue();
                 MessageBox.Show(valor.ToString());
             }
-            tablaNumeros.
+            
         }
     }
 }
