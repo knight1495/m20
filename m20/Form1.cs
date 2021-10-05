@@ -45,13 +45,33 @@ namespace m20
                 cola.Enqueue(numero);
                 numeros.RemoveAt(num);
             }
-
+            int contador = 0;
             while (cola.Count > 0)
             {
+                Button boton = new Button();
+                boton.Name = "btn" + contador;
+                boton.Click += new System.EventHandler(this.TeclesNum_Click);
+                contador++;
+
                 int valor = cola.Dequeue();
-                MessageBox.Show(valor.ToString());
+
+                boton.Text = valor.ToString();
+                tablaNumeros.Controls.Add(boton);
+                
             }
-            tablaNumeros.
+            
+        }
+
+        private void TeclesNum_Click(object sender, EventArgs e)
+        {
+            Button btn = (Button)sender;
+            string num = btn.Text;
+            textBox1.Text += btn.Text();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
