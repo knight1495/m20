@@ -1,4 +1,4 @@
-﻿
+
 namespace m20
 {
     partial class Form1
@@ -40,27 +40,38 @@ namespace m20
             // 
             // tablaNumeros
             // 
+            this.tablaNumeros.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.tablaNumeros.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.OutsetDouble;
             this.tablaNumeros.ColumnCount = 3;
-            this.tablaNumeros.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tablaNumeros.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tablaNumeros.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 116F));
+            this.tablaNumeros.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 52.82051F));
+            this.tablaNumeros.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 47.17949F));
+            this.tablaNumeros.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 109F));
             this.tablaNumeros.Controls.Add(this.button1, 0, 3);
             this.tablaNumeros.Controls.Add(this.button2, 2, 3);
-            this.tablaNumeros.Location = new System.Drawing.Point(230, 44);
+            this.tablaNumeros.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.tablaNumeros.Location = new System.Drawing.Point(158, 36);
+            this.tablaNumeros.Margin = new System.Windows.Forms.Padding(2);
             this.tablaNumeros.Name = "tablaNumeros";
             this.tablaNumeros.RowCount = 4;
             this.tablaNumeros.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.52083F));
             this.tablaNumeros.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 49.47917F));
-            this.tablaNumeros.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 104F));
-            this.tablaNumeros.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 97F));
-            this.tablaNumeros.Size = new System.Drawing.Size(364, 394);
+            this.tablaNumeros.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 84F));
+            this.tablaNumeros.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 79F));
+            this.tablaNumeros.Size = new System.Drawing.Size(316, 320);
             this.tablaNumeros.TabIndex = 0;
             // 
             // button1
             // 
+
+            this.button1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(5, 239);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
+
             this.button1.Location = new System.Drawing.Point(3, 299);
+
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(118, 92);
+            this.button1.Size = new System.Drawing.Size(98, 76);
             this.button1.TabIndex = 0;
             this.button1.Text = "C";
             this.button1.UseVisualStyleBackColor = true;
@@ -68,10 +79,12 @@ namespace m20
             // 
             // button2
             // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(251, 299);
+            this.button2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(205, 239);
+            this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(110, 92);
+            this.button2.Size = new System.Drawing.Size(106, 76);
             this.button2.TabIndex = 1;
             this.button2.Text = "#";
             this.button2.UseVisualStyleBackColor = true;
@@ -80,12 +93,13 @@ namespace m20
             // textBox1
             // 
             this.textBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.textBox1.Location = new System.Drawing.Point(0, 0);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
             this.textBox1.Name = "textBox1";
             this.textBox1.PasswordChar = '*';
-            this.textBox1.Size = new System.Drawing.Size(261, 53);
+            this.textBox1.Size = new System.Drawing.Size(196, 38);
             this.textBox1.TabIndex = 1;
             this.textBox1.UseSystemPasswordChar = true;
             // 
@@ -95,20 +109,22 @@ namespace m20
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.Controls.Add(this.textBox1);
-            this.panel1.Location = new System.Drawing.Point(285, 473);
+            this.panel1.Location = new System.Drawing.Point(207, 385);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(261, 54);
+            this.panel1.Size = new System.Drawing.Size(196, 37);
             this.panel1.TabIndex = 2;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(798, 581);
+            this.ClientSize = new System.Drawing.Size(598, 472);
             this.Controls.Add(this.tablaNumeros);
             this.Controls.Add(this.panel1);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form1_FormClosed);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.tablaNumeros.ResumeLayout(false);
             this.panel1.ResumeLayout(false);

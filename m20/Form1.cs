@@ -52,7 +52,12 @@ namespace m20
                 boton.Name = "btn" + contador;
                 boton.Width = 118;
                 boton.Height = 92;
+
+                boton.Font = new Font("Microsoft Sans Serif", 20f);
+
+
                 boton.Font = new Font("Microsoft Sans Serif", 13.8f);
+
                 boton.Click += new System.EventHandler(this.TeclesNum_Click);
                 contador++;
 
@@ -69,11 +74,33 @@ namespace m20
         {
             Button btn = (Button)sender;
             string num = btn.Text;
+
+            textBox1.Text += num;
+           
+          
+
             textBox1.Text += btn.Text;
+
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
+            if (textBox1.Text == "123")
+            {
+                this.Hide();
+                FrmAdmin form = new FrmAdmin();
+                form.Show();
+            }
+        }
+
+        private void Form1_FormClosed(object sender, FormClosedEventArgs e)
+        {
+         Application.Exit();
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            textBox1.Clear();
 
         }
 

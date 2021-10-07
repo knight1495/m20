@@ -20,7 +20,8 @@ namespace m20
 
         private void tick(object sender, EventArgs e)
         {
-            progressBar1.Increment(10);
+            progressBar1.Increment(2);
+            label1.Text = progressBar1.Value.ToString() + "%";
             if (progressBar1.Value == progressBar1.Maximum)
             {
                 timer1.Stop();
