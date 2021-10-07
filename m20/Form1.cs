@@ -71,13 +71,18 @@ namespace m20
             Button btn = (Button)sender;
             string num = btn.Text;
             textBox1.Text += num;
-
-
+           
+          
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            if (textBox1.Text == "123")
+            {
+                this.Hide();
+                FrmAdmin form = new FrmAdmin();
+                form.Show();
+            }
         }
 
         private void Form1_FormClosed(object sender, FormClosedEventArgs e)
@@ -90,6 +95,5 @@ namespace m20
             textBox1.Clear();
 
         }
-
     }
 }

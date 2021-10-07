@@ -60,7 +60,6 @@ namespace m20
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.panel1);
             this.Name = "MainUser";
-            this.Text = "Form3";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.MainUser_FormClosed);
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);

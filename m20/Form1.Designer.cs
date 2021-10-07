@@ -43,13 +43,13 @@ namespace m20
             this.tablaNumeros.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.tablaNumeros.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.OutsetDouble;
             this.tablaNumeros.ColumnCount = 3;
-            this.tablaNumeros.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tablaNumeros.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tablaNumeros.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 102F));
+            this.tablaNumeros.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 52.82051F));
+            this.tablaNumeros.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 47.17949F));
+            this.tablaNumeros.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 109F));
             this.tablaNumeros.Controls.Add(this.button1, 0, 3);
             this.tablaNumeros.Controls.Add(this.button2, 2, 3);
             this.tablaNumeros.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.tablaNumeros.Location = new System.Drawing.Point(172, 36);
+            this.tablaNumeros.Location = new System.Drawing.Point(158, 36);
             this.tablaNumeros.Margin = new System.Windows.Forms.Padding(2);
             this.tablaNumeros.Name = "tablaNumeros";
             this.tablaNumeros.RowCount = 4;
@@ -57,16 +57,17 @@ namespace m20
             this.tablaNumeros.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 49.47917F));
             this.tablaNumeros.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 84F));
             this.tablaNumeros.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 79F));
-            this.tablaNumeros.Size = new System.Drawing.Size(273, 320);
+            this.tablaNumeros.Size = new System.Drawing.Size(316, 320);
             this.tablaNumeros.TabIndex = 0;
             // 
             // button1
             // 
+            this.button1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(5, 239);
             this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 75);
+            this.button1.Size = new System.Drawing.Size(98, 76);
             this.button1.TabIndex = 0;
             this.button1.Text = "C";
             this.button1.UseVisualStyleBackColor = true;
@@ -74,11 +75,12 @@ namespace m20
             // 
             // button2
             // 
+            this.button2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(169, 239);
+            this.button2.Location = new System.Drawing.Point(205, 239);
             this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(91, 75);
+            this.button2.Size = new System.Drawing.Size(106, 76);
             this.button2.TabIndex = 1;
             this.button2.Text = "#";
             this.button2.UseVisualStyleBackColor = true;
@@ -103,7 +105,7 @@ namespace m20
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.Controls.Add(this.textBox1);
-            this.panel1.Location = new System.Drawing.Point(214, 384);
+            this.panel1.Location = new System.Drawing.Point(207, 385);
             this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(196, 37);
@@ -118,7 +120,6 @@ namespace m20
             this.Controls.Add(this.panel1);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
-            this.Text = "Form1";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form1_FormClosed);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.tablaNumeros.ResumeLayout(false);
