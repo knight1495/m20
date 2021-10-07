@@ -50,6 +50,9 @@ namespace m20
             {
                 Button boton = new Button();
                 boton.Name = "btn" + contador;
+                boton.Width = 118;
+                boton.Height = 92;
+                boton.Font = new Font("Microsoft Sans Serif", 13.8f);
                 boton.Click += new System.EventHandler(this.TeclesNum_Click);
                 contador++;
 
