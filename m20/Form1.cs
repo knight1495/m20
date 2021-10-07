@@ -66,12 +66,20 @@ namespace m20
         {
             Button btn = (Button)sender;
             string num = btn.Text;
-            textBox1.Text += btn.Text();
+            textBox1.Text += btn.Text;
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            if (textBox1.Text.Length > 0)
+            {
+                textBox1.Text = "";
+            }
         }
     }
 }
