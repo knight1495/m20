@@ -77,9 +77,6 @@ namespace m20
 
             textBox1.Text += num;
            
-          
-
-            textBox1.Text += btn.Text;
 
         }
 
@@ -104,12 +101,6 @@ namespace m20
 
         }
 
-        private void button1_Click_1(object sender, EventArgs e)
-        {
-            if (textBox1.Text.Length > 0)
-            {
-                textBox1.Text = "";
-            }
-        }
+        
     }
 }
