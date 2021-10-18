@@ -38,21 +38,27 @@ namespace m20
             else
             {
                 contador++;
-                txtBoxUser.Clear();
                 txtBoxPasswrd.Clear();
 
             }
-            FileStream fitxer = new FileStream("C:\\Users\Usuario\Desktop\m20 Grupal\log_error.log", FileMode.Create, FileAccess.Write);
 
 
-            StreamWriter error = new StreamWriter(fitxer);
+            
+
+
+            
 
             if (contador >= 3)
             {
-
-                error.Write("User: " + txtBoxUser.Text + " Password: " + txtBoxPasswrd.Text);
+                FileStream fitxer = new FileStream("C:\\Temp",
+                FileMode.Append, FileAccess.Write);
+                StreamWriter error = new StreamWriter(fitxer);
+                error.WriteLine("Date: " + DateTime.Now + " User: " + txtBoxUser.Text);
 
                 error.Close();
+
+                MessageBox.Show("Vamos a ver, payaso, sal de aquí o tendrás problemas!");
+                Application.Exit();
 
             }
         }
