@@ -59,5 +59,10 @@ namespace m20
             }
             
         }
+
+        private void FrmAdmin_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

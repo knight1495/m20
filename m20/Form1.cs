@@ -100,7 +100,5 @@ namespace m20
             textBox1.Clear();
 
         }
-
-        
     }
 }

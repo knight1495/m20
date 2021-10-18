@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
+
 
 namespace m20
 {
@@ -21,8 +23,9 @@ namespace m20
         {
             Application.Exit();
         }
-
+        int contador = 0;
         private void bttEnter_Click(object sender, EventArgs e)
+
         {
             if (txtBoxUser.Text == "user" && txtBoxPasswrd.Text == "admin")
             {
@@ -34,12 +37,31 @@ namespace m20
             }
             else
             {
-
-
+                contador++;
                 txtBoxUser.Clear();
                 txtBoxPasswrd.Clear();
-            }
 
+            }
+            FileStream fitxer = new FileStream("C:\\Users\Usuario\Desktop\m20 Grupal\log_error.log", FileMode.Create, FileAccess.Write);
+
+
+            StreamWriter error = new StreamWriter(fitxer);
+
+            if (contador >= 3)
+            {
+
+                error.Write("User: " + txtBoxUser.Text + " Password: " + txtBoxPasswrd.Text);
+
+                error.Close();
+
+            }
         }
     }
+
 }
+
+        
+
+   
+
+
