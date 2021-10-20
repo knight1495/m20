@@ -20,48 +20,44 @@ namespace m20
             InitializeComponent();
         }
 
-        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
-        {
-            Dictionary<String, int> posicion = new Dictionary<string, int>();
-
-            for (int i = 0; i < 4; i++)
-            {
-                String key;
-
-                key = abcd[i];
-                for (int j = 1; i < 5; j++)
-                {
-                 
-                    key += j;
-                    Random aleatorio = new Random();
-                    numerosaleatorios = aleatorio.Next(9999);
-                    foreach (String llave in posicion.Keys)
-                    {
-                        int result;
-                        if (!repetido)
-                        {
-                            posicion.TryGetValue(llave, out result);
-                            if(numerosaleatorios == result)
-                            {
-                                repetido = true;
-                            }
-                        }
-                    }
-                    if (!repetido)
-                    {
-                        posicion.Add(key, numerosaleatorios);
-                    }
-                    else
-                    {
-                        j--;
-                    }
-                }
-            }
-            
-        }
-
         private void FrmAdmin_Load(object sender, EventArgs e)
         {
+            Dictionary<String, String> posicion = new Dictionary<String, String>();
+            HashSet<int> numeros = new HashSet<int>();
+
+            Random aleatorio = new Random();
+            while (numeros.Count < 20)
+            {
+                numeros.Add(aleatorio.Next(9999));
+            }
+
+
+            String key;
+            String numero;
+            int contador1 = 0;
+            int contador2 = 1;
+
+
+            foreach (var num in numeros)
+            {
+
+                numero = num.ToString();
+                key = abcd[contador1] + contador2.ToString();
+                while (numero.Length < 4)
+                {
+                    numero = "0" + numero;
+                }
+                posicion.Add(key, numero);
+                if (contador2 == 5 && contador1 < 4)
+                {
+                    contador1++;
+                    contador2 = 0;
+                }
+                contador2++;
+
+            }
+
+
 
         }
     }
