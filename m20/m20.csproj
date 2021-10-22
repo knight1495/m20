@@ -33,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="sdsBBDD">
+      <HintPath>..\..\..\..\OneDrive - INSPECTORIA SALESIANA MARIA AUXILIADORA\S2AM\script\sdsBBDD.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
