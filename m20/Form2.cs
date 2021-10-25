@@ -38,10 +38,17 @@ namespace m20
 
                 byte[] hashedBytes = hash.ComputeHash(Encoding.UTF8.GetBytes(txtBoxPasswrd.Text));
 
-                string strHash = BitConverter.ToString(hashedBytes);
+                StringBuilder strBuilder = new StringBuilder();
 
-                contra = strHash;
+                for (int i = 0; i < hashedBytes.Length; i++)
+                {
+                    strBuilder.Append(hashedBytes[i].ToString("X2"));
+                }
 
+                //string strHash = BitConverter.ToString(hashedBytes);
+
+                contra = strBuilder.ToString().ToLower();
+                
             }
 
 
