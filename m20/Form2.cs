@@ -27,10 +27,13 @@ namespace m20
         {
             Application.Exit();
         }
-        int contador = 0;
+
+       
+
         private void bttEnter_Click(object sender, EventArgs e)
 
         {
+            int contador = 0;
             String contra;
             using (SHA256 hash = SHA256.Create())
 
@@ -45,17 +48,12 @@ namespace m20
                     strBuilder.Append(hashedBytes[i].ToString("X2"));
                 }
 
-                //string strHash = BitConverter.ToString(hashedBytes);
 
                 contra = strBuilder.ToString().ToLower();
                 
             }
 
-
             DataSet dts = bd.PortarPerConsulta("select * from dbo.Users where codeUser= '" + txtBoxUser.Text + "' and password= '" + contra + "'");
-
-
-
 
             if (dts.Tables[0].Rows.Count == 1)
             {
@@ -70,14 +68,7 @@ namespace m20
                 contador++;
                 txtBoxPasswrd.Clear();
 
-            }
-            
-            
-
-            
-
-
-            
+            }            
 
             if (contador >= 3)
             {
@@ -96,9 +87,3 @@ namespace m20
     }
 
 }
-
-        
-
-   
-
-

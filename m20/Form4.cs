@@ -22,6 +22,29 @@ namespace m20
 
         private void FrmAdmin_Load(object sender, EventArgs e)
         {
+            
+
+
+        }
+
+        private void natejabutons()
+        {
+
+            for (int i = 1; i < 5; i++)
+            {
+                for (int j = 1; j < 6; j++)
+                {
+                    tableLayoutPanel1.Controls.Remove(tableLayoutPanel1.GetControlFromPosition(i, j));
+                }
+                
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            tableLayoutPanel1.Visible = false;
+            natejabutons();
+
             Dictionary<String, String> posicion = new Dictionary<String, String>();
             HashSet<int> numeros = new HashSet<int>();
 
@@ -57,8 +80,29 @@ namespace m20
 
             }
 
+            foreach (var item in posicion)
+            {
+                Label lbl = new Label();
+                lbl.Text = item.Value;
+                tableLayoutPanel1.Controls.Add(lbl);
+                lbl.Font = new Font("Microsoft Sans Serif", 18f);
+            }
 
+            tableLayoutPanel1.Visible = true;
+        }
 
+        private void button2_Click(object sender, EventArgs e)
+        {
+            GestionDispo frm = new GestionDispo();
+
+            frm.Show();
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Form5 frm = new Form5();
+            frm.Show();
         }
     }
 }
