@@ -1,7 +1,7 @@
 ﻿
 namespace m20
 {
-    partial class FrmAdmin
+    partial class TablaCoord
     {
         /// <summary>
         /// Required designer variable.
@@ -30,17 +30,17 @@ namespace m20
         private void InitializeComponent()
         {
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
@@ -77,29 +77,42 @@ namespace m20
             this.tableLayoutPanel1.Size = new System.Drawing.Size(924, 446);
             this.tableLayoutPanel1.TabIndex = 2;
             // 
-            // button1
+            // label10
             // 
-            this.button1.Location = new System.Drawing.Point(88, 12);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(287, 50);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
+            this.label10.Location = new System.Drawing.Point(768, 0);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(148, 89);
+            this.label10.TabIndex = 9;
+            this.label10.Text = "5";
+            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label1
+            // label6
             // 
-            this.label1.Location = new System.Drawing.Point(3, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(148, 74);
-            this.label1.TabIndex = 0;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(3, 89);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(147, 74);
+            this.label6.TabIndex = 5;
+            this.label6.Text = "A";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label5
+            // 
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
+            this.label5.Location = new System.Drawing.Point(615, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(147, 89);
+            this.label5.TabIndex = 4;
+            this.label5.Text = "4";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label2
             // 
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-            this.label2.Location = new System.Drawing.Point(157, 0);
+            this.label2.Location = new System.Drawing.Point(156, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(148, 89);
+            this.label2.Size = new System.Drawing.Size(147, 89);
             this.label2.TabIndex = 1;
             this.label2.Text = "1";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -107,9 +120,9 @@ namespace m20
             // label3
             // 
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-            this.label3.Location = new System.Drawing.Point(311, 0);
+            this.label3.Location = new System.Drawing.Point(309, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(148, 89);
+            this.label3.Size = new System.Drawing.Size(147, 89);
             this.label3.TabIndex = 2;
             this.label3.Text = "2";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -117,39 +130,19 @@ namespace m20
             // label4
             // 
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-            this.label4.Location = new System.Drawing.Point(465, 0);
+            this.label4.Location = new System.Drawing.Point(462, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(148, 89);
+            this.label4.Size = new System.Drawing.Size(147, 89);
             this.label4.TabIndex = 3;
             this.label4.Text = "3";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label5
-            // 
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-            this.label5.Location = new System.Drawing.Point(619, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(148, 89);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "4";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label6
-            // 
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(3, 89);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(148, 74);
-            this.label6.TabIndex = 5;
-            this.label6.Text = "A";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label7
             // 
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
             this.label7.Location = new System.Drawing.Point(3, 178);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(148, 74);
+            this.label7.Size = new System.Drawing.Size(147, 74);
             this.label7.TabIndex = 6;
             this.label7.Text = "B";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -159,7 +152,7 @@ namespace m20
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
             this.label8.Location = new System.Drawing.Point(3, 267);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(148, 89);
+            this.label8.Size = new System.Drawing.Size(147, 89);
             this.label8.TabIndex = 7;
             this.label8.Text = "C";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -169,20 +162,27 @@ namespace m20
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
             this.label9.Location = new System.Drawing.Point(3, 356);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(148, 90);
+            this.label9.Size = new System.Drawing.Size(147, 90);
             this.label9.TabIndex = 8;
             this.label9.Text = "D";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label10
+            // label1
             // 
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-            this.label10.Location = new System.Drawing.Point(773, 0);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(148, 89);
-            this.label10.TabIndex = 9;
-            this.label10.Text = "5";
-            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label1.Location = new System.Drawing.Point(3, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(147, 74);
+            this.label1.TabIndex = 0;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(88, 12);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(287, 50);
+            this.button1.TabIndex = 3;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -204,7 +204,7 @@ namespace m20
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
-            // FrmAdmin
+            // TablaCoord
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -214,7 +214,7 @@ namespace m20
             this.Controls.Add(this.button1);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "FrmAdmin";
+            this.Name = "TablaCoord";
             this.Text = "Form4";
             this.Load += new System.EventHandler(this.FrmAdmin_Load);
             this.tableLayoutPanel1.ResumeLayout(false);

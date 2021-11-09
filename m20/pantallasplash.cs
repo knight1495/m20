@@ -10,9 +10,10 @@ using System.Windows.Forms;
 
 namespace m20
 {
-    public partial class splash : Form
+    public partial class pantallasplash : Form
     {
-        public splash()
+        int contador = 0;
+        public pantallasplash()
         {
             InitializeComponent();
 
@@ -20,13 +21,13 @@ namespace m20
 
         private void tick(object sender, EventArgs e)
         {
-            progressBar1.Increment(2);
-            label1.Text = progressBar1.Value.ToString() + "%";
-            if (progressBar1.Value == progressBar1.Maximum)
+            contador++;
+            label1.Text = contador.ToString() + "%";
+            if (contador == 100)
             {
                 timer1.Stop();
                 this.Hide();
-                Form2 main = new Form2();
+                pantallaloggin main = new pantallaloggin();
                 main.ShowDialog();
             }
         }
@@ -37,9 +38,19 @@ namespace m20
             {
                 timer1.Stop();
                 this.Hide();
-                Form1 form = new Form1();
+                PanelAdmin form = new PanelAdmin();
                 form.Show();
             }
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -11,9 +11,9 @@ using System.Net.NetworkInformation;
 
 namespace m20
 {
-    public partial class Form5 : Form
+    public partial class GestionUsers : Form
     {
-        public Form5()
+        public GestionUsers()
         {
             InitializeComponent();
         }

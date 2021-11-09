@@ -1,7 +1,7 @@
 
 namespace m20
 {
-    partial class Form1
+    partial class PanelAdmin
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -46,7 +46,7 @@ namespace m20
             this.tablaNumeros.ColumnCount = 3;
             this.tablaNumeros.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 52.82051F));
             this.tablaNumeros.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 47.17949F));
-            this.tablaNumeros.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 165F));
+            this.tablaNumeros.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 169F));
             this.tablaNumeros.Controls.Add(this.button1, 0, 3);
             this.tablaNumeros.Controls.Add(this.button2, 2, 3);
             this.tablaNumeros.ForeColor = System.Drawing.SystemColors.ControlText;
@@ -68,7 +68,7 @@ namespace m20
             this.button1.Location = new System.Drawing.Point(6, 295);
             this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(122, 94);
+            this.button1.Size = new System.Drawing.Size(120, 94);
             this.button1.TabIndex = 0;
             this.button1.Text = "C";
             this.button1.UseVisualStyleBackColor = true;
@@ -78,10 +78,10 @@ namespace m20
             // 
             this.button2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(255, 295);
+            this.button2.Location = new System.Drawing.Point(251, 295);
             this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(160, 94);
+            this.button2.Size = new System.Drawing.Size(164, 94);
             this.button2.TabIndex = 1;
             this.button2.Text = "#";
             this.button2.UseVisualStyleBackColor = true;
@@ -123,7 +123,7 @@ namespace m20
             this.label1.TabIndex = 3;
             this.label1.Text = "A5";
             // 
-            // Form1
+            // PanelAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -132,7 +132,7 @@ namespace m20
             this.Controls.Add(this.tablaNumeros);
             this.Controls.Add(this.panel1);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Name = "Form1";
+            this.Name = "PanelAdmin";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form1_FormClosed);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.tablaNumeros.ResumeLayout(false);

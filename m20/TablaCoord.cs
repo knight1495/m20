@@ -10,12 +10,12 @@ using System.Windows.Forms;
 
 namespace m20
 {
-    public partial class FrmAdmin : Form
+    public partial class TablaCoord : Form
     {
         int numerosaleatorios;
         String[]  abcd = { "a", "b", "c", "d" };
         Boolean repetido = false;
-        public FrmAdmin()
+        public TablaCoord()
         {
             InitializeComponent();
         }
@@ -101,7 +101,7 @@ namespace m20
 
         private void button3_Click(object sender, EventArgs e)
         {
-            Form5 frm = new Form5();
+            GestionUsers frm = new GestionUsers();
             frm.Show();
         }
     }

@@ -11,9 +11,9 @@ using System.Collections;
 
 namespace m20
 {
-    public partial class Form1 : Form
+    public partial class PanelAdmin : Form
     {
-        public Form1()
+        public PanelAdmin()
         {
             InitializeComponent();
 
@@ -90,7 +90,7 @@ namespace m20
             if (textBox1.Text == "123")
             {
                 this.Hide();
-                FrmAdmin form = new FrmAdmin();
+                TablaCoord form = new TablaCoord();
                 form.Show();
             }
         }

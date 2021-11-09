@@ -15,10 +15,10 @@ namespace m20
 {
 
     
-    public partial class Form2 : Form
+    public partial class pantallaloggin : Form
     {
         sdsBBDD.Selects bd = new sdsBBDD.Selects();
-        public Form2()
+        public pantallaloggin()
         {
             InitializeComponent();
         }

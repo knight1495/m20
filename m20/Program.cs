@@ -16,7 +16,7 @@ namespace m20
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new splash());
+            Application.Run(new pantallasplash());
         }
     }
 }

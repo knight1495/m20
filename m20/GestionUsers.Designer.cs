@@ -1,7 +1,7 @@
 ﻿
 namespace m20
 {
-    partial class Form5
+    partial class GestionUsers
     {
         /// <summary>
         /// Required designer variable.
@@ -116,7 +116,7 @@ namespace m20
             this.btnDel.Text = "Delete";
             this.btnDel.UseVisualStyleBackColor = true;
             // 
-            // Form5
+            // GestionUsers
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -130,7 +130,7 @@ namespace m20
             this.Controls.Add(this.lblUser);
             this.Controls.Add(this.lblHost);
             this.Controls.Add(this.lblMac);
-            this.Name = "Form5";
+            this.Name = "GestionUsers";
             this.Text = "Form5";
             this.Load += new System.EventHandler(this.Form5_Load);
             this.ResumeLayout(false);
