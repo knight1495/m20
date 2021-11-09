@@ -17,13 +17,13 @@ namespace m20
         {
             InitializeComponent();
 
-            
+
 
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -65,8 +65,13 @@ namespace m20
 
                 boton.Text = valor.ToString();
                 tablaNumeros.Controls.Add(boton);
-                
+
             }
+
+
+            string[] opcion = {"A", "B", "C", "D"};
+
+            string[] opcionNum = { "1", "2", "3", "4", "5" };
             
         }
 
