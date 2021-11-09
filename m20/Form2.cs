@@ -50,7 +50,7 @@ namespace m20
 
             if (contador >= 3)
             {
-                FileStream fitxer = new FileStream("C:\\Temp",
+                FileStream fitxer = new FileStream("C:\\Users\\icaro\\OneDrive\\Escritorio",
                 FileMode.Append, FileAccess.Write);
                 StreamWriter error = new StreamWriter(fitxer);
                 error.WriteLine("Date: " + DateTime.Now + " User: " + txtBoxUser.Text);
