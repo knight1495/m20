@@ -12,9 +12,9 @@ namespace m20
 {
     public partial class TablaCoord : Form
     {
-        int numerosaleatorios;
+        
         String[]  abcd = { "a", "b", "c", "d" };
-        Boolean repetido = false;
+        
         public TablaCoord()
         {
             InitializeComponent();
@@ -91,17 +91,9 @@ namespace m20
             tableLayoutPanel1.Visible = true;
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void TablaCoord_FormClosed(object sender, FormClosedEventArgs e)
         {
-            GestionDispo frm = new GestionDispo();
-
-            frm.Show();
-
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-            GestionUsers frm = new GestionUsers();
+            PrincipalAdmins frm = new PrincipalAdmins();
             frm.Show();
         }
     }

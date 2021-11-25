@@ -34,7 +34,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="sdsBBDD">
-      <HintPath>..\..\knight1495\m20\m20\bin\Debug\sdsBBDD.dll</HintPath>
+      <HintPath>..\..\..\..\OneDrive - INSPECTORIA SALESIANA MARIA AUXILIADORA\S2AM\script\sdsBBDD.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -50,6 +50,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DarkCoreDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DarkCoreDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="PanelAdmin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -67,6 +72,12 @@
     </Compile>
     <Compile Include="Form3.Designer.cs">
       <DependentUpon>Form3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PrincipalAdmins.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrincipalAdmins.Designer.cs">
+      <DependentUpon>PrincipalAdmins.cs</DependentUpon>
     </Compile>
     <Compile Include="TablaCoord.cs">
       <SubType>Form</SubType>
@@ -103,6 +114,9 @@
     <EmbeddedResource Include="Form3.resx">
       <DependentUpon>Form3.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="PrincipalAdmins.resx">
+      <DependentUpon>PrincipalAdmins.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="TablaCoord.resx">
       <DependentUpon>TablaCoord.cs</DependentUpon>
     </EmbeddedResource>
@@ -125,6 +139,17 @@
     <EmbeddedResource Include="pantallasplash.resx">
       <DependentUpon>pantallasplash.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="DarkCoreDataSet.xsc">
+      <DependentUpon>DarkCoreDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DarkCoreDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DarkCoreDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DarkCoreDataSet.xss">
+      <DependentUpon>DarkCoreDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

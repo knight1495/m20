@@ -41,5 +41,11 @@ namespace m20
 
             txtHost.Text = System.Net.Dns.GetHostName();
         }
+
+        private void GestionDispo_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            PrincipalAdmins frm = new PrincipalAdmins();
+            frm.Show();
+        }
     }
 }

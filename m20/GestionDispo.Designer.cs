@@ -102,6 +102,7 @@ namespace m20
             this.Controls.Add(this.txtMac);
             this.Name = "GestionDispo";
             this.Text = "Form5";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.GestionDispo_FormClosed);
             this.Load += new System.EventHandler(this.GestionDispo_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

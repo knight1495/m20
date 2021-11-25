@@ -84,7 +84,7 @@ namespace m20
             // cmbUsers
             // 
             this.cmbUsers.FormattingEnabled = true;
-            this.cmbUsers.Location = new System.Drawing.Point(518, 83);
+            this.cmbUsers.Location = new System.Drawing.Point(515, 87);
             this.cmbUsers.Name = "cmbUsers";
             this.cmbUsers.Size = new System.Drawing.Size(121, 24);
             this.cmbUsers.TabIndex = 6;
@@ -132,6 +132,7 @@ namespace m20
             this.Controls.Add(this.lblMac);
             this.Name = "GestionUsers";
             this.Text = "Form5";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.GestionUsers_FormClosed);
             this.Load += new System.EventHandler(this.Form5_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

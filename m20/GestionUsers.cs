@@ -18,8 +18,13 @@ namespace m20
             InitializeComponent();
         }
 
+        sdsBBDD.Selects bd = new sdsBBDD.Selects();
+        
+
         private void Form5_Load(object sender, EventArgs e)
         {
+            DataSet dts;
+            dts = bd.PortarPerConsulta("Select * from Users");
             string mac = "";
             foreach (NetworkInterface nic in NetworkInterface.GetAllNetworkInterfaces())
             {
@@ -37,6 +42,16 @@ namespace m20
             txtMac.Text = mac;
 
             txtHost.Text = System.Net.Dns.GetHostName();
+
+            cmbUsers.DataSource = dts.Tables[0];
+            cmbUsers.DisplayMember = "DescUser";
+            cmbUsers.ValueMember = "idUser";
+        }
+
+        private void GestionUsers_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            PrincipalAdmins frm = new PrincipalAdmins();
+            frm.Show();
         }
     }
 }
