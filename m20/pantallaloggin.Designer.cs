@@ -33,17 +33,19 @@ namespace m20
             this.txtBoxPasswrd = new System.Windows.Forms.TextBox();
             this.bttEnter = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.lblLogin = new System.Windows.Forms.Label();
             this.txtBoxUser = new System.Windows.Forms.TextBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.picClose = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.Showpasswordicon = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picClose)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Showpasswordicon)).BeginInit();
             this.SuspendLayout();
             // 
             // txtBoxPasswrd
@@ -86,6 +88,16 @@ namespace m20
             this.panel1.Size = new System.Drawing.Size(279, 304);
             this.panel1.TabIndex = 6;
             // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::m20.Properties.Resources.Logo_jedi_amarillo;
+            this.pictureBox3.Location = new System.Drawing.Point(-122, 52);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(525, 181);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 0;
+            this.pictureBox3.TabStop = false;
+            // 
             // lblLogin
             // 
             this.lblLogin.AutoSize = true;
@@ -108,16 +120,6 @@ namespace m20
             this.txtBoxUser.Size = new System.Drawing.Size(296, 21);
             this.txtBoxUser.TabIndex = 0;
             this.txtBoxUser.Text = "User";
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::m20.Properties.Resources.Logo_jedi_amarillo;
-            this.pictureBox3.Location = new System.Drawing.Point(-122, 52);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(525, 181);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 0;
-            this.pictureBox3.TabStop = false;
             // 
             // picClose
             // 
@@ -150,12 +152,22 @@ namespace m20
             this.pictureBox2.TabIndex = 9;
             this.pictureBox2.TabStop = false;
             // 
+            // Showpasswordicon
+            // 
+            this.Showpasswordicon.Location = new System.Drawing.Point(705, 180);
+            this.Showpasswordicon.Name = "Showpasswordicon";
+            this.Showpasswordicon.Size = new System.Drawing.Size(39, 35);
+            this.Showpasswordicon.TabIndex = 10;
+            this.Showpasswordicon.TabStop = false;
+            this.Showpasswordicon.Click += new System.EventHandler(this.Showpasswordicon_Click);
+            // 
             // pantallaloggin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(244)))), ((int)(((byte)(28)))));
             this.ClientSize = new System.Drawing.Size(809, 303);
+            this.Controls.Add(this.Showpasswordicon);
             this.Controls.Add(this.lblLogin);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.picClose);
@@ -173,6 +185,7 @@ namespace m20
             ((System.ComponentModel.ISupportInitialize)(this.picClose)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Showpasswordicon)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -188,5 +201,6 @@ namespace m20
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox Showpasswordicon;
     }
 }
