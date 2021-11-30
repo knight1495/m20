@@ -104,5 +104,10 @@ namespace m20
             GestionUsers frm = new GestionUsers();
             frm.Show();
         }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

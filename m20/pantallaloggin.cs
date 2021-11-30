@@ -84,6 +84,11 @@ namespace m20
 
             }
         }
+
+        private void pantallaloggin_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 
 }
