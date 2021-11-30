@@ -107,7 +107,10 @@ namespace m20
             }
         }
 
-
+        private void picClose_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 
 }
