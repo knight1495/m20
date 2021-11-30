@@ -63,9 +63,49 @@ namespace m20.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _253_2535994_jedi_order_symbol_by_jmk_prime_star_wars_jedi_symbol {
+            get {
+                object obj = ResourceManager.GetObject("253-2535994_jedi-order-symbol-by-jmk-prime-star-wars-jedi-symbol", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap estrellas_en_movimiento {
             get {
                 object obj = ResourceManager.GetObject("estrellas en movimiento", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Linea_negra {
+            get {
+                object obj = ResourceManager.GetObject("Linea negra", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Logo_jedi_amarillo {
+            get {
+                object obj = ResourceManager.GetObject("Logo jedi amarillo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Logo_jedi_blanco {
+            get {
+                object obj = ResourceManager.GetObject("Logo jedi blanco", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

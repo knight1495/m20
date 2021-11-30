@@ -186,7 +186,7 @@ namespace m20
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(471, 38);
+            this.button2.Location = new System.Drawing.Point(469, 26);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 4;
@@ -196,7 +196,7 @@ namespace m20
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(625, 26);
+            this.button3.Location = new System.Drawing.Point(689, 26);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(75, 23);
             this.button3.TabIndex = 5;

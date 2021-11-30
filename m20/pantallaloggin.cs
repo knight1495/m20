@@ -79,11 +79,12 @@ namespace m20
 
                 error.Close();
 
-                MessageBox.Show("Vamos a ver, payaso, sal de aquí o tendrás problemas!");
+                MessageBox.Show("Usuario incorrecto, iniciando protocolo de autodestrucción...");
                 Application.Exit();
 
             }
         }
+
     }
 
 }

@@ -141,5 +141,17 @@
   <ItemGroup>
     <None Include="Img\estrellas en movimiento.gif" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Linea negra.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Img\253-2535994_jedi-order-symbol-by-jmk-prime-star-wars-jedi-symbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Img\Logo jedi blanco.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Img\Logo jedi amarillo.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
