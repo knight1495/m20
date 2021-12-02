@@ -37,5 +37,10 @@ namespace m20
             frmUsers.Show();
             this.Hide();
         }
+
+        private void PrincipalAdmins_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

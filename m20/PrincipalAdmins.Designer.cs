@@ -74,6 +74,7 @@ namespace m20
             this.Controls.Add(this.btnCoordenadas);
             this.Name = "PrincipalAdmins";
             this.Text = "PrincipalAdmins";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.PrincipalAdmins_FormClosed);
             this.ResumeLayout(false);
 
         }
