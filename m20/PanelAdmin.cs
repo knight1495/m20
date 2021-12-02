@@ -90,7 +90,7 @@ namespace m20
             if (textBox1.Text == "123")
             {
                 this.Hide();
-                TablaCoord form = new TablaCoord();
+                PrincipalAdmins form = new PrincipalAdmins();
                 form.Show();
             }
         }

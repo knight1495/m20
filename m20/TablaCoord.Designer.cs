@@ -40,6 +40,7 @@ namespace m20
             this.label10 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnRefrescar = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -194,7 +195,7 @@ namespace m20
             this.label6.Text = "A";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // button1
+            // btnRefrescar
             // 
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(244)))), ((int)(((byte)(28)))));
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
@@ -260,6 +261,7 @@ namespace m20
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "TablaCoord";
             this.Text = "Form4";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.TablaCoord_FormClosed);
             this.Load += new System.EventHandler(this.FrmAdmin_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -269,7 +271,7 @@ namespace m20
 
         #endregion
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnRefrescar;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
