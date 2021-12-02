@@ -19,9 +19,16 @@ namespace m20
             InitializeComponent();
         }
 
+        sdsBBDD.Selects bd = new sdsBBDD.Selects();
+        DataSet dtsMac;
+        string query;
+
 
         private void GestionDispo_Load(object sender, EventArgs e)
         {
+            
+            txtHost.Enabled = false;
+            txtMac.Enabled = false;
 
             string mac = "";
             foreach (NetworkInterface nic in NetworkInterface.GetAllNetworkInterfaces())
@@ -36,16 +43,51 @@ namespace m20
                 }
             }
 
-         
+
             txtMac.Text = mac;
 
             txtHost.Text = System.Net.Dns.GetHostName();
+
+
+            query = "select * from TrustedDevices where MAC = '" + txtMac.Text + "'";
+            dtsMac = bd.PortarPerConsulta(query);
+
+            if (dtsMac.Tables[0].Rows.Count == 0)
+            {
+                MessageBox.Show("Device not logged");
+                btnDelete.Enabled = false;
+            }
+            else
+            {
+                MessageBox.Show("Device logged");
+                btnSave.Enabled = false;
+            }
+            
+
+            
         }
 
         private void GestionDispo_FormClosed(object sender, FormClosedEventArgs e)
         {
             PrincipalAdmins frm = new PrincipalAdmins();
             frm.Show();
+        }
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            DataRow dr = dtsMac.Tables[0].NewRow();
+            dr["MAC"] = txtMac.Text;
+            dr["HostName"] = txtHost.Text;
+            dtsMac.Tables[0].Rows.Add(dr);
+            bd.Actualitzar(query, dtsMac.Tables[0].TableName, dtsMac);
+            this.Close();
+
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            dtsMac.Tables[0].Rows[0].Delete();
+            bd.Actualitzar(query, dtsMac.Tables[0].TableName, dtsMac);
         }
     }
 }
