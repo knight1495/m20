@@ -125,6 +125,7 @@ namespace m20
             this.btnDel.TabIndex = 9;
             this.btnDel.Text = "Delete";
             this.btnDel.UseVisualStyleBackColor = true;
+            this.btnDel.Click += new System.EventHandler(this.btnDel_Click);
             // 
             // GestionUsers
             // 

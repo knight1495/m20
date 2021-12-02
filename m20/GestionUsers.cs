@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Net.NetworkInformation;
+using System.Xml;
 
 namespace m20
 {
@@ -93,12 +94,14 @@ namespace m20
             {
                 MessageBox.Show("Device "+ dtsMac.Tables[0].Rows[0]["MAC"].ToString() + " alredy  linked with User: " + cmbUsers.Text);
                 btnDel.Enabled = true;
-                
+                btnRegis.Enabled = false;
+
             }
             else
             {
                 MessageBox.Show("Device " + dtsMac.Tables[0].Rows[0]["MAC"].ToString() + " not linked with User: " + cmbUsers.Text);
                 btnRegis.Enabled = true;
+                btnDel.Enabled = false;
                 cmbUsers.Enabled = false;
 
             }
@@ -115,8 +118,23 @@ namespace m20
             dr["IdUser"] = cmbUsers.SelectedValue;
             dtsMessi.Tables[0].Rows.Add(dr);
             bd.Actualitzar(query, dtsMessi.Tables[0].TableName, dtsMessi);
-            MessageBox.Show("User and device registered correctly");
+
+            MessageBox.Show("User and device registered properly");
             this.Close();
+        }
+
+        private void btnDel_Click(object sender, EventArgs e)
+        {
+            dtsMessi.Tables[0].Rows[0].Delete();
+            bd.Actualitzar(query, dtsMessi.Tables[0].TableName, dtsMessi);
+            MessageBox.Show("User and device unlinked properly ");
+            this.Close();
+        }
+
+        private void añadirUsuariosArchivo()
+        {
+            
+
         }
     }
 }
