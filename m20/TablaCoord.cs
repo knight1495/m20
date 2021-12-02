@@ -102,9 +102,5 @@ namespace m20
             Application.Exit();
         }
 
-        private void label6_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }
