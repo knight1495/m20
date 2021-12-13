@@ -37,6 +37,7 @@
       <HintPath>..\..\..\..\OneDrive - INSPECTORIA SALESIANA MARIA AUXILIADORA\S2AM\script\sdsBBDD.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Net" />
     <Reference Include="System.Xml.Linq" />

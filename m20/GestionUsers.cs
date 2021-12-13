@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Net.NetworkInformation;
 using System.Xml;
+using System.Configuration;
 
 namespace m20
 {
@@ -92,14 +93,14 @@ namespace m20
             dtsMessi = bd.PortarPerConsulta(query);
             if (dtsMessi.Tables[0].Rows.Count !=0)
             {
-                MessageBox.Show("Device "+ dtsMac.Tables[0].Rows[0]["MAC"].ToString() + " alredy  linked with User: " + cmbUsers.Text);
+                MessageBox.Show("Device "+ dtsMac.Tables[0].Rows[0]["MAC"].ToString() + " alredy  binded with User: " + cmbUsers.Text);
                 btnDel.Enabled = true;
                 btnRegis.Enabled = false;
 
             }
             else
             {
-                MessageBox.Show("Device " + dtsMac.Tables[0].Rows[0]["MAC"].ToString() + " not linked with User: " + cmbUsers.Text);
+                MessageBox.Show("Device " + dtsMac.Tables[0].Rows[0]["MAC"].ToString() + " not binded with User: " + cmbUsers.Text);
                 btnRegis.Enabled = true;
                 btnDel.Enabled = false;
                 cmbUsers.Enabled = false;
@@ -119,7 +120,7 @@ namespace m20
             dtsMessi.Tables[0].Rows.Add(dr);
             bd.Actualitzar(query, dtsMessi.Tables[0].TableName, dtsMessi);
 
-            MessageBox.Show("User and device registered properly");
+            MessageBox.Show("User and device binded properly");
             this.Close();
         }
 
@@ -127,14 +128,79 @@ namespace m20
         {
             dtsMessi.Tables[0].Rows[0].Delete();
             bd.Actualitzar(query, dtsMessi.Tables[0].TableName, dtsMessi);
-            MessageBox.Show("User and device unlinked properly ");
+            MessageBox.Show("User and device unbinded properly ");
             this.Close();
         }
 
         private void añadirUsuariosArchivo()
         {
-            
+            ReadAllSettings();
+            ReadSetting("TrustedUSer");
+            ReadSetting("NotValid");
+            AddUpdateAppSettings("NewSetting", "May 7, 2014");
+            AddUpdateAppSettings("TrustedUser", cmbUsers.Text);
+            ReadAllSettings();
 
+        }
+        static void ReadAllSettings()
+        {
+            try
+            {
+                var appSettings = ConfigurationManager.AppSettings;
+
+                if (appSettings.Count == 0)
+                {
+                    Console.WriteLine("AppSettings is empty.");
+                }
+                else
+                {
+                    foreach (var key in appSettings.AllKeys)
+                    {
+                        Console.WriteLine("Key: {0} Value: {1}", key, appSettings[key]);
+                    }
+                }
+            }
+            catch (ConfigurationErrorsException)
+            {
+                Console.WriteLine("Error reading app settings");
+            }
+        }
+
+        static void ReadSetting(string key)
+        {
+            try
+            {
+                var appSettings = ConfigurationManager.AppSettings;
+                string result = appSettings[key] ?? "Not Found";
+                Console.WriteLine(result);
+            }
+            catch (ConfigurationErrorsException)
+            {
+                Console.WriteLine("Error reading app settings");
+            }
+        }
+
+        static void AddUpdateAppSettings(string key, string value)
+        {
+            try
+            {
+                var configFile = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
+                var settings = configFile.AppSettings.Settings;
+                if (settings[key] == null)
+                {
+                    settings.Add(key, value);
+                }
+                else
+                {
+                    settings[key].Value = value;
+                }
+                configFile.Save(ConfigurationSaveMode.Modified);
+                ConfigurationManager.RefreshSection(configFile.AppSettings.SectionInformation.Name);
+            }
+            catch (ConfigurationErrorsException)
+            {
+                Console.WriteLine("Error writing app settings");
+            }
         }
     }
 }
