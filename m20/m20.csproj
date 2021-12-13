@@ -18,7 +18,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
+    <OutputPath>..\Executable\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -79,6 +79,11 @@
     <Compile Include="PrincipalAdmins.Designer.cs">
       <DependentUpon>PrincipalAdmins.cs</DependentUpon>
     </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="TablaCoord.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -117,9 +122,6 @@
     <EmbeddedResource Include="PrincipalAdmins.resx">
       <DependentUpon>PrincipalAdmins.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="TablaCoord.resx">
-      <DependentUpon>TablaCoord.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="GestionUsers.resx">
       <DependentUpon>GestionUsers.cs</DependentUpon>
     </EmbeddedResource>
@@ -128,16 +130,14 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <EmbeddedResource Include="pantallasplash.resx">
       <DependentUpon>pantallasplash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TablaCoord.resx">
+      <DependentUpon>TablaCoord.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="DarkCoreDataSet.xsc">
       <DependentUpon>DarkCoreDataSet.xsd</DependentUpon>
@@ -164,19 +164,58 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Img\estrellas en movimiento.gif" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\Linea negra.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Img\253-2535994_jedi-order-symbol-by-jmk-prime-star-wars-jedi-symbol.png" />
+    <None Include="Resources\acegifdotcom-unique-lightsabre-2.gif" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Img\Logo jedi blanco.png" />
+    <None Include="Resources\Close_icon_white.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Img\Logo jedi amarillo.png" />
+    <None Include="Resources\estrellas en movimiento.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\istockphoto-1293222010-170667a.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo jedi amarillo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo jedi blanco.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo jedi negro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sable horizontal transparente.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sable horizontal.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Show password off.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Show password on.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\star-wars-backgrounds-14.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\star-wars-backgrounds-15.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Titulo splash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3NIUYJX-star-wars-wallpapers.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\253-2535994_jedi-order-symbol-by-jmk-prime-star-wars-jedi-symbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\306-3063269_jedi-order-logo-png-star-wars-the-clone.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
