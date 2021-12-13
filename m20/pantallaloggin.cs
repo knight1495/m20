@@ -9,6 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
 using System.Security.Cryptography;
+using System.Net.NetworkInformation;
+using System.Configuration;
 
 
 namespace m20
@@ -39,32 +41,27 @@ namespace m20
         {
             int contador = 0;
             String contra;
-            using (SHA256 hash = SHA256.Create())
 
+            contra = HashejarContra();
+            string mac = pillarMac();
+            
+
+
+            DataSet dtsUsers = bd.PortarPerConsulta("select * from dbo.Users where codeUser= '" + txtBoxUser.Text + "' and password= '" + contra + "'");
+
+            if (dtsUsers.Tables[0].Rows.Count == 1)
             {
-
-                byte[] hashedBytes = hash.ComputeHash(Encoding.UTF8.GetBytes(txtBoxPasswrd.Text));
-
-                StringBuilder strBuilder = new StringBuilder();
-
-                for (int i = 0; i < hashedBytes.Length; i++)
+                if (comprobarMessiUser(mac, txtBoxUser.Text))
                 {
-                    strBuilder.Append(hashedBytes[i].ToString("X2"));
+                    if (comprobarApp())
+                    {
+                        this.Hide();
+                        MainUser Main = new MainUser();
+                        Main.ShowDialog();
+                    }
+                    
                 }
-
-
-                contra = strBuilder.ToString().ToLower();
                 
-            }
-
-            DataSet dts = bd.PortarPerConsulta("select * from dbo.Users where codeUser= '" + txtBoxUser.Text + "' and password= '" + contra + "'");
-
-            if (dts.Tables[0].Rows.Count == 1)
-            {
-
-                this.Hide();
-                MainUser Main = new MainUser();
-                Main.ShowDialog();
 
             }
             else
@@ -106,6 +103,79 @@ namespace m20
 
             }
         }
+
+        private string HashejarContra()
+        {
+            String contra;
+            using (SHA256 hash = SHA256.Create())
+            {
+                
+                byte[] hashedBytes = hash.ComputeHash(Encoding.UTF8.GetBytes(txtBoxPasswrd.Text));
+
+                StringBuilder strBuilder = new StringBuilder();
+
+                for (int i = 0; i < hashedBytes.Length; i++)
+                {
+                    strBuilder.Append(hashedBytes[i].ToString("X2"));
+                }
+
+
+                contra = strBuilder.ToString().ToLower();
+
+            }
+            return contra;
+        }
+
+        private string pillarMac()
+        {
+            string mac;
+            mac = "";
+            foreach (NetworkInterface nic in NetworkInterface.GetAllNetworkInterfaces())
+            {
+
+                if (nic.OperationalStatus == OperationalStatus.Up && nic.NetworkInterfaceType == NetworkInterfaceType.Wireless80211)
+                {
+                    if (nic.GetPhysicalAddress().ToString() != "")
+                    {
+                        mac = nic.GetPhysicalAddress().ToString();
+                    }
+                }
+            }
+            return mac;
+        }
+
+        private bool comprobarMessiUser(string mac, string user)
+        {
+            bool check;
+            DataSet dtsMessiUser = bd.PortarPerConsulta("Select * From MessiUser Where mac = '" + mac + "' AND user = '" + user + "'");
+            if (dtsMessiUser.Tables[0].Rows.Count !=0)
+            {
+                check = true;
+            }
+            else
+            {
+                check = false;
+            }
+            return check;
+        }
+        private bool comprobarApp()
+        {
+            bool check;
+
+            var appSettings = ConfigurationManager.AppSettings;
+            string result = appSettings["TrustedUser"] ?? "Not Found";
+
+            if (result == txtBoxUser.Text)
+            {
+                check = true;
+            }
+            else
+            {
+                check = false;
+            }
+            return check;
+        }
+
 
         private void picClose_Click(object sender, EventArgs e)
         {

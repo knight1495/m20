@@ -120,6 +120,8 @@ namespace m20
             dtsMessi.Tables[0].Rows.Add(dr);
             bd.Actualitzar(query, dtsMessi.Tables[0].TableName, dtsMessi);
 
+            añadirUsuariosArchivo();
+
             MessageBox.Show("User and device binded properly");
             this.Close();
         }
@@ -134,12 +136,10 @@ namespace m20
 
         private void añadirUsuariosArchivo()
         {
-            ReadAllSettings();
-            ReadSetting("TrustedUSer");
-            ReadSetting("NotValid");
-            AddUpdateAppSettings("NewSetting", "May 7, 2014");
+            //ReadAllSettings();
+            //ReadSetting("TrustedUser");
             AddUpdateAppSettings("TrustedUser", cmbUsers.Text);
-            ReadAllSettings();
+            //ReadAllSettings();
 
         }
         static void ReadAllSettings()
