@@ -63,9 +63,179 @@ namespace m20.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _253_2535994_jedi_order_symbol_by_jmk_prime_star_wars_jedi_symbol {
+            get {
+                object obj = ResourceManager.GetObject("_253_2535994_jedi_order_symbol_by_jmk_prime_star_wars_jedi_symbol", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _306_3063269_jedi_order_logo_png_star_wars_the_clone {
+            get {
+                object obj = ResourceManager.GetObject("_306_3063269_jedi_order_logo_png_star_wars_the_clone", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _3NIUYJX_star_wars_wallpapers {
+            get {
+                object obj = ResourceManager.GetObject("_3NIUYJX_star_wars_wallpapers", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap acegifdotcom_unique_lightsabre_2 {
+            get {
+                object obj = ResourceManager.GetObject("acegifdotcom_unique_lightsabre_2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Close_icon_white {
+            get {
+                object obj = ResourceManager.GetObject("Close_icon_white", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap estrellas_en_movimiento {
             get {
-                object obj = ResourceManager.GetObject("estrellas en movimiento", resourceCulture);
+                object obj = ResourceManager.GetObject("estrellas_en_movimiento", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap istockphoto_1293222010_170667a {
+            get {
+                object obj = ResourceManager.GetObject("istockphoto_1293222010_170667a", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Linea_negra {
+            get {
+                object obj = ResourceManager.GetObject("Linea negra", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Logo_jedi_amarillo {
+            get {
+                object obj = ResourceManager.GetObject("Logo_jedi_amarillo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Logo_jedi_blanco {
+            get {
+                object obj = ResourceManager.GetObject("Logo_jedi_blanco", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Logo_jedi_negro {
+            get {
+                object obj = ResourceManager.GetObject("Logo_jedi_negro", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Sable_horizontal {
+            get {
+                object obj = ResourceManager.GetObject("Sable_horizontal", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Sable_horizontal_transparente {
+            get {
+                object obj = ResourceManager.GetObject("Sable_horizontal_transparente", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Show_password_off {
+            get {
+                object obj = ResourceManager.GetObject("Show_password_off", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Show_password_on {
+            get {
+                object obj = ResourceManager.GetObject("Show_password_on", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap star_wars_backgrounds_14 {
+            get {
+                object obj = ResourceManager.GetObject("star_wars_backgrounds_14", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap star_wars_backgrounds_15 {
+            get {
+                object obj = ResourceManager.GetObject("star_wars_backgrounds_15", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Titulo_splash {
+            get {
+                object obj = ResourceManager.GetObject("Titulo_splash", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

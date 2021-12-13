@@ -118,7 +118,58 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="estrellas en movimiento" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Img\estrellas en movimiento.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Linea negra" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Linea negra.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="acegifdotcom_unique_lightsabre_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\acegifdotcom-unique-lightsabre-2.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Close_icon_white" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Close_icon_white.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="estrellas_en_movimiento" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\estrellas en movimiento.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="istockphoto_1293222010_170667a" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\istockphoto-1293222010-170667a.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Logo_jedi_amarillo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Logo jedi amarillo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Logo_jedi_blanco" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Logo jedi blanco.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Logo_jedi_negro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Logo jedi negro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sable_horizontal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sable horizontal.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sable_horizontal_transparente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sable horizontal transparente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Show_password_off" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Show password off.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Show_password_on" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Show password on.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="star_wars_backgrounds_14" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\star-wars-backgrounds-14.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="star_wars_backgrounds_15" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\star-wars-backgrounds-15.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Titulo_splash" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Titulo splash.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_253_2535994_jedi_order_symbol_by_jmk_prime_star_wars_jedi_symbol" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\253-2535994_jedi-order-symbol-by-jmk-prime-star-wars-jedi-symbol.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_306_3063269_jedi_order_logo_png_star_wars_the_clone" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\306-3063269_jedi-order-logo-png-star-wars-the-clone.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_3NIUYJX_star_wars_wallpapers" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3NIUYJX-star-wars-wallpapers.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

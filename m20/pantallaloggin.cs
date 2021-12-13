@@ -16,10 +16,13 @@ namespace m20
 
     
     public partial class pantallaloggin : Form
+
     {
+        bool showpass = true;
         sdsBBDD.Selects bd = new sdsBBDD.Selects();
         public pantallaloggin()
         {
+            
             InitializeComponent();
         }
 
@@ -27,6 +30,7 @@ namespace m20
         {
             Application.Exit();
         }
+
 
        
 
@@ -79,10 +83,33 @@ namespace m20
 
                 error.Close();
 
-                MessageBox.Show("Vamos a ver, payaso, sal de aquí o tendrás problemas!");
+                MessageBox.Show("Usuario incorrecto, iniciando protocolo de autodestrucción...");
                 Application.Exit();
 
             }
+        }
+
+        private void Showpasswordicon_Click(object sender, EventArgs e)
+            
+        {
+            if (showpass == false)
+            {
+                Showpasswordicon.Image = Image.FromFile("Img\\Show password off.png");
+                showpass = true;
+                txtBoxPasswrd.UseSystemPasswordChar = true;
+            }
+            else
+            {
+                Showpasswordicon.Image = Image.FromFile("Img\\Show password on.png");
+                showpass = false;
+                txtBoxPasswrd.UseSystemPasswordChar = false;
+
+            }
+        }
+
+        private void picClose_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 

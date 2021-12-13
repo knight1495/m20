@@ -96,5 +96,11 @@ namespace m20
             PrincipalAdmins frm = new PrincipalAdmins();
             frm.Show();
         }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
     }
 }
