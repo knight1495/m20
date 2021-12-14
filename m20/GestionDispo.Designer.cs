@@ -40,61 +40,74 @@ namespace m20
             // txtMac
             // 
             this.txtMac.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.txtMac.Location = new System.Drawing.Point(202, 99);
+            this.txtMac.Location = new System.Drawing.Point(301, 99);
             this.txtMac.Name = "txtMac";
-            this.txtMac.Size = new System.Drawing.Size(232, 22);
+            this.txtMac.Size = new System.Drawing.Size(273, 22);
             this.txtMac.TabIndex = 0;
             // 
             // txtHost
             // 
             this.txtHost.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.txtHost.Location = new System.Drawing.Point(202, 174);
+            this.txtHost.Location = new System.Drawing.Point(301, 172);
             this.txtHost.Name = "txtHost";
-            this.txtHost.Size = new System.Drawing.Size(232, 22);
+            this.txtHost.Size = new System.Drawing.Size(273, 22);
             this.txtHost.TabIndex = 1;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(69, 104);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(246, 101);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(37, 17);
+            this.label1.Size = new System.Drawing.Size(49, 20);
             this.label1.TabIndex = 2;
             this.label1.Text = "MAC";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(69, 179);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(198, 172);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(74, 17);
+            this.label2.Size = new System.Drawing.Size(97, 20);
             this.label2.TabIndex = 3;
             this.label2.Text = "HostName";
             // 
             // btnSave
             // 
-            this.btnSave.Location = new System.Drawing.Point(130, 219);
+            this.btnSave.BackColor = System.Drawing.Color.Black;
+            this.btnSave.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSave.ForeColor = System.Drawing.Color.White;
+            this.btnSave.Location = new System.Drawing.Point(301, 257);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(75, 23);
+            this.btnSave.Size = new System.Drawing.Size(105, 40);
             this.btnSave.TabIndex = 4;
             this.btnSave.Text = "Save";
-            this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.UseVisualStyleBackColor = false;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // btnDelete
             // 
-            this.btnDelete.Location = new System.Drawing.Point(227, 219);
+            this.btnDelete.BackColor = System.Drawing.Color.Black;
+            this.btnDelete.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDelete.ForeColor = System.Drawing.Color.White;
+            this.btnDelete.Location = new System.Drawing.Point(471, 257);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(75, 23);
+            this.btnDelete.Size = new System.Drawing.Size(103, 40);
             this.btnDelete.TabIndex = 5;
             this.btnDelete.Text = "Delete";
-            this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.UseVisualStyleBackColor = false;
             this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // GestionDispo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(244)))), ((int)(((byte)(28)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnSave);
@@ -103,6 +116,7 @@ namespace m20
             this.Controls.Add(this.txtHost);
             this.Controls.Add(this.txtMac);
             this.Name = "GestionDispo";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form5";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.GestionDispo_FormClosed);
             this.Load += new System.EventHandler(this.GestionDispo_Load);

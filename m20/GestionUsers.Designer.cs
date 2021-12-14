@@ -43,32 +43,39 @@ namespace m20
             // lblMac
             // 
             this.lblMac.AutoSize = true;
-            this.lblMac.Location = new System.Drawing.Point(173, 82);
+            this.lblMac.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMac.Location = new System.Drawing.Point(206, 84);
             this.lblMac.Name = "lblMac";
-            this.lblMac.Size = new System.Drawing.Size(37, 17);
+            this.lblMac.Size = new System.Drawing.Size(49, 20);
             this.lblMac.TabIndex = 0;
             this.lblMac.Text = "MAC";
             // 
             // lblHost
             // 
             this.lblHost.AutoSize = true;
-            this.lblHost.Location = new System.Drawing.Point(173, 181);
+            this.lblHost.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHost.Location = new System.Drawing.Point(158, 178);
             this.lblHost.Name = "lblHost";
-            this.lblHost.Size = new System.Drawing.Size(74, 17);
+            this.lblHost.Size = new System.Drawing.Size(97, 20);
             this.lblHost.TabIndex = 1;
             this.lblHost.Text = "HostName";
             // 
             // lblUser
             // 
             this.lblUser.AutoSize = true;
-            this.lblUser.Location = new System.Drawing.Point(433, 90);
+            this.lblUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUser.Location = new System.Drawing.Point(460, 130);
             this.lblUser.Name = "lblUser";
-            this.lblUser.Size = new System.Drawing.Size(38, 17);
+            this.lblUser.Size = new System.Drawing.Size(49, 20);
             this.lblUser.TabIndex = 2;
             this.lblUser.Text = "User";
             // 
             // txtHost
             // 
+            this.txtHost.BackColor = System.Drawing.Color.Black;
+            this.txtHost.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtHost.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtHost.ForeColor = System.Drawing.Color.White;
             this.txtHost.Location = new System.Drawing.Point(261, 176);
             this.txtHost.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtHost.Name = "txtHost";
@@ -78,6 +85,10 @@ namespace m20
             // 
             // txtMac
             // 
+            this.txtMac.BackColor = System.Drawing.Color.Black;
+            this.txtMac.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtMac.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMac.ForeColor = System.Drawing.Color.White;
             this.txtMac.Location = new System.Drawing.Point(261, 82);
             this.txtMac.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtMac.Name = "txtMac";
@@ -87,8 +98,12 @@ namespace m20
             // 
             // cmbUsers
             // 
+            this.cmbUsers.BackColor = System.Drawing.Color.Black;
+            this.cmbUsers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cmbUsers.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbUsers.ForeColor = System.Drawing.Color.White;
             this.cmbUsers.FormattingEnabled = true;
-            this.cmbUsers.Location = new System.Drawing.Point(515, 87);
+            this.cmbUsers.Location = new System.Drawing.Point(515, 130);
             this.cmbUsers.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmbUsers.Name = "cmbUsers";
             this.cmbUsers.Size = new System.Drawing.Size(121, 24);
@@ -96,41 +111,55 @@ namespace m20
             // 
             // btnCheck
             // 
-            this.btnCheck.Location = new System.Drawing.Point(181, 302);
+            this.btnCheck.BackColor = System.Drawing.Color.Black;
+            this.btnCheck.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnCheck.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCheck.ForeColor = System.Drawing.Color.White;
+            this.btnCheck.Location = new System.Drawing.Point(163, 297);
             this.btnCheck.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCheck.Name = "btnCheck";
-            this.btnCheck.Size = new System.Drawing.Size(75, 23);
+            this.btnCheck.Size = new System.Drawing.Size(75, 33);
             this.btnCheck.TabIndex = 7;
             this.btnCheck.Text = "Check";
-            this.btnCheck.UseVisualStyleBackColor = true;
+            this.btnCheck.UseVisualStyleBackColor = false;
             this.btnCheck.Click += new System.EventHandler(this.btnCheck_Click);
             // 
             // btnRegis
             // 
-            this.btnRegis.Location = new System.Drawing.Point(261, 302);
+            this.btnRegis.BackColor = System.Drawing.Color.Black;
+            this.btnRegis.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnRegis.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRegis.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegis.ForeColor = System.Drawing.Color.White;
+            this.btnRegis.Location = new System.Drawing.Point(356, 297);
             this.btnRegis.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnRegis.Name = "btnRegis";
-            this.btnRegis.Size = new System.Drawing.Size(75, 23);
+            this.btnRegis.Size = new System.Drawing.Size(89, 33);
             this.btnRegis.TabIndex = 8;
             this.btnRegis.Text = "Resgister";
-            this.btnRegis.UseVisualStyleBackColor = true;
+            this.btnRegis.UseVisualStyleBackColor = false;
             this.btnRegis.Click += new System.EventHandler(this.btnRegis_Click);
             // 
             // btnDel
             // 
-            this.btnDel.Location = new System.Drawing.Point(343, 302);
+            this.btnDel.BackColor = System.Drawing.Color.Black;
+            this.btnDel.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnDel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDel.ForeColor = System.Drawing.Color.White;
+            this.btnDel.Location = new System.Drawing.Point(561, 297);
             this.btnDel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnDel.Name = "btnDel";
-            this.btnDel.Size = new System.Drawing.Size(75, 23);
+            this.btnDel.Size = new System.Drawing.Size(75, 33);
             this.btnDel.TabIndex = 9;
             this.btnDel.Text = "Delete";
-            this.btnDel.UseVisualStyleBackColor = true;
+            this.btnDel.UseVisualStyleBackColor = false;
             this.btnDel.Click += new System.EventHandler(this.btnDel_Click);
             // 
             // GestionUsers
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(244)))), ((int)(((byte)(28)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnDel);
             this.Controls.Add(this.btnRegis);
@@ -141,8 +170,10 @@ namespace m20
             this.Controls.Add(this.lblUser);
             this.Controls.Add(this.lblHost);
             this.Controls.Add(this.lblMac);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "GestionUsers";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form5";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.GestionUsers_FormClosed);
             this.Load += new System.EventHandler(this.Form5_Load);
