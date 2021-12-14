@@ -202,5 +202,10 @@ namespace m20
                 Console.WriteLine("Error writing app settings");
             }
         }
+
+        private void picClose_Click_1(object sender, EventArgs e)
+        {
+            this.Hide();
+        }
     }
 }
