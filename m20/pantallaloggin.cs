@@ -39,51 +39,63 @@ namespace m20
         private void bttEnter_Click(object sender, EventArgs e)
 
         {
+            int device, user;
             int contador = 0;
             String contra;
 
             contra = HashejarContra();
             string mac = pillarMac();
-            
 
+            DataSet dtsMAC = bd.PortarPerConsulta("Select * from TrustedDevices where MAC = '" + mac + "'");
 
             DataSet dtsUsers = bd.PortarPerConsulta("select * from dbo.Users where codeUser= '" + txtBoxUser.Text + "' and password= '" + contra + "'");
 
-            if (dtsUsers.Tables[0].Rows.Count == 1)
+              if (dtsMAC.Tables[0].Rows.Count == 1)
             {
-                if (comprobarMessiUser(mac, txtBoxUser.Text))
+                device = int.Parse(dtsMAC.Tables[0].Rows[0]["IdDevice"].ToString());
+                if (dtsUsers.Tables[0].Rows.Count == 1)
                 {
-                    if (comprobarApp())
+                    user = int.Parse(dtsUsers.Tables[0].Rows[0]["IdUser"].ToString());
+                    if (comprobarMessiUser(device, user))
                     {
-                        this.Hide();
-                        MainUser Main = new MainUser();
-                        Main.ShowDialog();
-                    }
-                    
-                }
-                
+                        if (comprobarApp())
+                        {
+                            this.Hide();
+                            MainUser Main = new MainUser();
+                            Main.ShowDialog();
+                        }
 
+                    }
+
+
+                }
+                else
+                {
+                    contador++;
+                    txtBoxPasswrd.Clear();
+
+                }
+                if (contador >= 3)
+                {
+                    FileStream fitxer = new FileStream("C:\\Temp\\log_error.log",
+                    FileMode.Append, FileAccess.Write);
+                    StreamWriter error = new StreamWriter(fitxer);
+                    error.WriteLine("Date: " + DateTime.Now + " User: " + txtBoxUser.Text);
+
+                    error.Close();
+
+                    MessageBox.Show("Usuario incorrecto, iniciando protocolo de autodestrucción...");
+                    Application.Exit();
+
+                }
             }
             else
             {
-                contador++;
-                txtBoxPasswrd.Clear();
-
-            }            
-
-            if (contador >= 3)
-            {
-                FileStream fitxer = new FileStream("C:\\Temp\\log_error.log",
-                FileMode.Append, FileAccess.Write);
-                StreamWriter error = new StreamWriter(fitxer);
-                error.WriteLine("Date: " + DateTime.Now + " User: " + txtBoxUser.Text);
-
-                error.Close();
-
-                MessageBox.Show("Usuario incorrecto, iniciando protocolo de autodestrucción...");
-                Application.Exit();
-
+                MessageBox.Show("Dispositiu no registrat a la base de dades, accés denegat");
             }
+            
+
+            
         }
 
         private void Showpasswordicon_Click(object sender, EventArgs e)
@@ -144,10 +156,10 @@ namespace m20
             return mac;
         }
 
-        private bool comprobarMessiUser(string mac, string user)
+        private bool comprobarMessiUser(int device, int user)
         {
             bool check;
-            DataSet dtsMessiUser = bd.PortarPerConsulta("Select * From MessiUser Where mac = '" + mac + "' AND user = '" + user + "'");
+            DataSet dtsMessiUser = bd.PortarPerConsulta("Select * From MessiUsers Where idDevice = '" + device + "' AND idUser = '" + user + "'");
             if (dtsMessiUser.Tables[0].Rows.Count !=0)
             {
                 check = true;
@@ -165,7 +177,7 @@ namespace m20
             var appSettings = ConfigurationManager.AppSettings;
             string result = appSettings["TrustedUser"] ?? "Not Found";
 
-            if (result == txtBoxUser.Text)
+            if (result.ToUpper() == txtBoxUser.Text.ToUpper())
             {
                 check = true;
             }
